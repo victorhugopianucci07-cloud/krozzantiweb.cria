@@ -98,4 +98,10 @@ function calcular(){
   el('linha3detalhe').textContent=`(10% = ${dinheiro(final)})`;
   el('resultado3').textContent=dinheiro(final);
   el('resumo').textContent=dinheiro(final);
-... (7 linhas)
+}
+el('calcular').addEventListener('click',calcular);
+['valor','desc1','desc2'].forEach(id=>el(id).addEventListener('input',calcular));
+calcular();
+</script>
+</body>
+</html>
